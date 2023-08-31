@@ -1,0 +1,321 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+html {
+  font-size: 14px;
+}
+#root {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background-color: #8cc461;
+  font-size: 10px;
+}
+#score-container {
+  display: flex;
+  height: 23vh;
+  width: 50%;
+  border: 2px solid white;
+  border-radius: 13px;
+  margin: auto;
+  margin-top: 5vh;
+  /* flex-shrink: 1; */
+}
+@font-face {
+  font-family: Roboto;
+  src: url("./assets/Roboto/Roboto-Regular.ttf");
+}
+#left-container {
+  display: flex;
+  flex-direction: column;
+  padding-left: 2vw;
+  justify-content: space-around;
+  /* flex-shrink: 2.5; */
+  flex: 50%;
+  color: #fff;
+  font-family: Roboto;
+  font-size: 2.5rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 4px;
+}
+#right-container {
+  float: right;
+  display: flex;
+  text-align: center;
+  justify-content: space-around;
+  width: 50%;
+  margin-top: 3vh;
+  /* flex-shrink: 2.5; */
+}
+#right-container > div {
+  background-color: white;
+  height: 15vh;
+  width: 9vw;
+  border-radius: 9px;
+  padding-top: 0.5rem;
+  color: #656565;
+  font-family: Roboto;
+  font-size: 0.8rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 1.7px;
+}
+#comp-score,
+#score {
+  margin: auto;
+  padding-top: 0.7rem;
+  width: 50%;
+  color: #252525;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 2.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+#play-area {
+  /* display: none; */
+  margin: auto;
+  width: 80%;
+}
+#play-area button {
+  border-radius: 50%;
+}
+#play-icons {
+  margin: auto;
+  width: 70%;
+  height: 60vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  /* border: 1px solid yellow; */
+}
+#rock-container {
+  position: relative;
+  top: -15%;
+  left: 18%;
+}
+#rock {
+  height: 15vh;
+  width: 15vh;
+  border-radius: 50%;
+
+  outline-style: solid;
+  outline-width: 1rem;
+  outline-color: rgba(0, 116, 182, 1);
+}
+#scissor-container {
+  position: relative;
+  top: 25%;
+}
+#scissor {
+  height: 15vh;
+  width: 15vh;
+  border-radius: 50%;
+
+  outline: 1rem solid rgba(255, 169, 67, 1);
+}
+#paper-container {
+  position: relative;
+  top: -15%;
+  right: 18%;
+}
+#paper {
+  height: 15vh;
+  width: 15vh;
+  border-radius: 50%;
+
+  outline: 1rem solid rgba(189, 0, 255, 1);
+}
+#mod-play-area {
+  display: none;
+  margin: auto;
+  width: 70%;
+  height: 70%;
+  /* border: 1px solid black; */
+}
+#player-icon,
+#pc-icon {
+  /* width: 33%; */
+  /* height: 100%; */
+  /* border: 2px solid yellow; */
+  margin: auto;
+}
+#titles {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  margin: auto;
+  margin-top: 5%;
+  color: #fff;
+  font-family: Roboto;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.1rem;
+}
+#result-area {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 90%;
+  height: 80%;
+  /* border: 2px solid black; */
+  margin: auto;
+  font-family: Roboto;
+  font-weight: 600;
+}
+#banner {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  letter-spacing: 0.1rem;
+}
+#winner {
+  color: white;
+  font-size: 2.5rem;
+}
+#loser {
+  color: white;
+  font-size: 1.5rem;
+  position: relative;
+  top: -7%;
+  visibility: visible;
+}
+#play-again button {
+  width: 80%;
+  padding: 0.5rem;
+  height: fit-content;
+  border-radius: 0.5rem;
+  border: none;
+  font-family: Roboto;
+  letter-spacing: 0.1rem;
+  word-spacing: 0.2rem;
+}
+#nxt {
+  display: none;
+}
+#nxt button {
+  /* display: none; */
+  bottom: 2vh;
+  right: 3vw;
+  width: 8vw;
+  height: 8vh;
+  background-color: #8cc461;
+  border-radius: 10px;
+  border: 2px solid #fff;
+  color: #fff;
+  font-family: Roboto;
+  font-size: 1.3rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.2rem;
+}
+#rules-btn {
+  bottom: 2vh;
+  right: 3vw;
+  width: 8vw;
+  height: 8vh;
+  background-color: #8cc461;
+  border-radius: 10px;
+  border: 2px solid #fff;
+  color: #fff;
+  font-family: Roboto;
+  font-size: 1.3rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.2rem;
+  margin-left: -20%;
+}
+.buttons {
+  display: flex;
+  float: right;
+  position: absolute;
+  right: 2%;
+  bottom: 2%;
+}
+#rules {
+  display: none;
+  width: 20%;
+  height: 48%;
+  border: 2px solid yellow;
+  margin: auto;
+  text-align: center;
+  border-radius: 1.3rem;
+  border: 0.7rem solid #fff;
+  background: #004429;
+  float: left;
+  z-index: 1;
+  position: absolute;
+  bottom: 12%;
+  right: 5%;
+}
+#rules h1 {
+  color: #fff;
+  font-family: Roboto;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  padding-top: 1rem;
+}
+#rules li {
+  list-style-type: none;
+  color: #fff;
+  font-family: Roboto;
+  font-size: 1.1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding-top: 0.5rem;
+  padding-left: 1.2rem;
+  margin-bottom: 0.1rem;
+  text-align: left;
+}
+#rules li::before {
+  content: "";
+  position: absolute;
+  left: 2%;
+  margin-top: 0.5rem;
+  width: 0.4rem;
+  height: 0.4rem;
+  background-color: yellow;
+}
+#close {
+  position: absolute;
+  top: -15%;
+  right: -12%;
+  border-radius: 50%;
+  outline: 0.5rem solid white;
+}
+@font-face {
+  font-family: Dangrek;
+  src: url("./assets/Dangrek/Dangrek-Regular.ttf");
+}
+#close button {
+  height: 4rem;
+  width: 4rem;
+  border-radius: 50%;
+  text-align: center;
+  color: #fff;
+  font-family: Dangrek;
+  font-size: 2.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  background-color: red;
+  padding-top: -5%;
+}
+line {
+  float: left;
+  stroke-width: 5px;
+  color: black;
+}
