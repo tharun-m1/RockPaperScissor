@@ -1,0 +1,164 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+html {
+  font-size: 10px;
+}
+body {
+  background: #89c15e;
+}
+#container {
+  width: 50%;
+  height: 60vh;
+  margin: auto;
+
+  /* border: 1px solid black; */
+  background-image: url("./assets/Group\ 5.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  /* background-attachment: fixed; */
+}
+
+#image {
+  position: relative;
+  top: 35%;
+  /* right: -37%; */
+}
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+  height: 30%;
+}
+@font-face {
+  font-family: Roboto;
+  src: url("./assets/Roboto/Roboto-Regular.ttf");
+}
+#hurray {
+  color: #fff;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 8rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.91rem;
+}
+#text {
+  color: #fff;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.4rem;
+}
+#play-again {
+  text-align: center;
+  margin: auto;
+  margin-top: 4vh;
+}
+#play-again button {
+  width: 15vw;
+  height: 6vh;
+  border-radius: 1rem;
+  border: none;
+}
+#rules-btn {
+  float: right;
+  position: absolute;
+  right: 2%;
+  bottom: 2%;
+  bottom: 2vh;
+  right: 3vw;
+  width: 8vw;
+  height: 8vh;
+  background-color: #8cc461;
+  border-radius: 10px;
+  border: 2px solid #fff;
+  color: #fff;
+  font-family: Roboto;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.2rem;
+  margin-left: -20%;
+}
+
+#rules {
+  display: none;
+  width: 20%;
+  height: 48%;
+  border: 2px solid yellow;
+  margin: auto;
+  text-align: center;
+  border-radius: 1.3rem;
+  border: 0.7rem solid #fff;
+  background: #004429;
+  float: left;
+  z-index: 1;
+  position: absolute;
+  bottom: 12%;
+  right: 5%;
+}
+#rules h1 {
+  color: #fff;
+  font-family: Roboto;
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  padding-top: 1rem;
+}
+#rules li {
+  list-style-type: none;
+  color: #fff;
+  font-family: Roboto;
+  font-size: 1.7rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding-top: 0.5rem;
+  padding-left: 1.2rem;
+  margin-bottom: 0.1rem;
+  text-align: left;
+}
+#rules li::before {
+  content: "";
+  position: absolute;
+  left: 2%;
+  margin-top: 0.5rem;
+  width: 0.4rem;
+  height: 0.4rem;
+  background-color: yellow;
+}
+#close {
+  position: absolute;
+  top: -8%;
+  right: -8%;
+  border-radius: 50%;
+  outline: 0.5rem solid white;
+}
+@font-face {
+  font-family: Dangrek;
+  src: url("./assets/Dangrek/Dangrek-Regular.ttf");
+}
+#close button {
+  height: 5rem;
+  width: 5rem;
+  border-radius: 50%;
+  text-align: center;
+  color: #fff;
+  font-family: Dangrek;
+  font-size: 2.8rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  background-color: red;
+  padding-top: -5%;
+}
